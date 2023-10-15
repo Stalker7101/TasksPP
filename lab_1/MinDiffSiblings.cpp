@@ -29,7 +29,7 @@ void* min_diff_siblings_thread(void* data)
 
     for (int i = start; i < end; ++i)
     {
-        int current = part->arr[i] - part->arr[i - 1];
+        int current = std::abs(part->arr[i] - part->arr[i - 1]);
         if (current && (current < part->answMin))
         {
             part->answMin = current;

@@ -91,7 +91,7 @@ TEST(MinDiffSiblingsTest, TestSmallExtremeCase3)
 {
     std::vector<int> vec = { 0, 10, 20, 30, 31, 50, 60, 71, 70 };
     const auto res = min_diff_siblings(vec, 2);
-    EXPECT_EQ(res, 8);
+    EXPECT_EQ(res, 4);
 }
 
 // ----------------------------------------------------------------------------- //
